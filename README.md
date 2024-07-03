@@ -1,6 +1,6 @@
-# README
+# DanceFusion
 
-This repository contains official code for our research paper "Rethinking Sampling Strategies for Long-Term Dance Generation with Diffusion Model" (https://dl.acm.org/doi/10.1145/3581783.3611887).
+This repository contains official code for our research paper "Rethinking Sampling Strategies for Long-Term Dance Generation with Diffusion Model".
 
 ## Environment setup
 
