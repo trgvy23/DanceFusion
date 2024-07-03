@@ -6,15 +6,14 @@ This repository contains official code for our research paper "Rethinking Sampli
 
 Our environment is similar to [EDGE](https://github.com/Stanford-TML/EDGE). You may check them for more details.
 
-we also provide an `requirements.txt` file that you can use with pip:
 ```
-pip install -r requirements.txt
+pytorch==2.3.0
 ```
 ## Data preparation
 
 You can download the AIST++ dataset from [EDGE repo](https://github.com/Stanford-TML/EDGE). Specificall, it is at [google drive](https://drive.google.com/file/d/1RzqSbSnbMEwLUagV0GThfpm9JJXePGkV/view?usp=sharing).  After downloading, put it in the `data_loaders\\d2m\\` folder.
 
-Process AIST++ dataset using:
+Process the AIST++ dataset using the following commands:
 
 ```
 cd data_loaders\d2m\
@@ -22,13 +21,13 @@ python create_dataset.py --extract-baseline --extract-jukebox --datapath [DATA_D
 ```
 
 ## Pre-trained weights
-We provide the pretrained models here: [pretrained models](https://drive.google.com/drive/folders/1gJvqg7yD16ZaMCDBY2tL4tnq2ulArWcz?usp=sharing). The 'pretrained.zip' file contains the pretrained model and training configurations used to report metrics in our paper. You can put the pretrained model and training configuration file under `[CHECKPOINT_DIR]`.
+We provide the pretrained models here: [pretrained models](https://drive.google.com/file/d/1fsjaW87fXvaFQDBQxdCh9dO4ineCi9ln/view?usp=sharing). It contains the pretrained model and training configurations used to report metrics in our paper. You can put the pretrained model and training configuration file under `[CHECKPOINT_DIR]`.
 
 ## Training
 Once the AIST++ dataset is downloaded and processed, run the training script:
 
 ```
-
+python train_diffusion.py --save_dir [CHECKPOINT DIR]
 ```
 
 If you decide to use baseline feature extracted from Librosa library, change `jukebox_feats_sliced` into `music_npy_sliced` in `dance_dataset.py`
