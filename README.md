@@ -6,7 +6,6 @@ DanceFusion
 
 <h3 align="center"> This repository contains official code for our research paper "Rethinking Sampling Strategies for Long-Term Dance Generation with Diffusion Model".</h3>
 
-![demo-video](https://github.com/trgvy23/DanceFusion/blob/main/media/demo.mp4)
 ---
 
 ## 📍 Environment setup
