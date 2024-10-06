@@ -148,7 +148,4 @@ dmypy.json
 *.pt
 data_loaders/d2m/aistpp_dataset.zip
 /renders
-*.gif
-*.png
-*.mp4
 *.csv
